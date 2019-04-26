@@ -7,5 +7,5 @@ data ={'Name': ["John", "Anna", "Peter", "Linda"],
     }
 data_pandas = pd.DataFrame(data)
 display(data_pandas)
-#Displaying a filtered list by age
+# Displaying a filtered list by age
 display(data_pandas[data_pandas.Age>30])
