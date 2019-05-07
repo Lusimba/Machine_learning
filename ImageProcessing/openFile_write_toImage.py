@@ -35,29 +35,6 @@ f=misc.imread('C:/Users/User/Desktop/Machine_learning/ImageProcessing/Images/mou
 # plt.imshow(img)
 # plt.show()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # #using OpenCV
 # import cv2
   
