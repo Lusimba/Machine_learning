@@ -4,8 +4,6 @@ from scipy import misc
 f=misc.imread('C:/Users/User/Desktop/Machine_learning/ImageProcessing/Images/mountain.png')
 
 
-
-
 # def rgb2gray(rgb):
 
 #     r, g, b = rgb[:,:,0], rgb[:,:,1], rgb[:,:,2]
@@ -21,21 +19,6 @@ f=misc.imread('C:/Users/User/Desktop/Machine_learning/ImageProcessing/Images/mou
 # print(type(f))
 # # shape and type of object(image)
 # print(f.shape, f.dtype)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ##Using sci-kit image to convert to grayscale
 # import matplotlib.pyplot as plt
