@@ -1,9 +1,17 @@
-import keyboard
+#%%
+# import keyboard
 import numpy as np
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import train_test_split
-from sklearn.datasets import load_iris
-iris_dataset = load_iris()
+import pandas as pd
+
+# f = open("E:\Downloads\Iris.xlsx")
+# f.readline()  # skip the header
+#iris_dataset = np.loadtxt('E:\Downloads\Iris.xlsx', delimiter=',')
+
+# input_file = "E:\Downloads\Iris.csv"
+iris_dataset = pd.read_csv('E:\Downloads\Iris.csv', sep=',', header = 0, encoding='ascii', engine='python')
+
 knn = KNeighborsClassifier(n_neighbors=1)
 X_train, X_test, y_train, y_test=train_test_split(iris_dataset['data'], iris_dataset['target'], random_state=0)
 knn.fit(X_train, y_train)
