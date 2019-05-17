@@ -1,4 +1,3 @@
-#%%
 import numpy as np
 import pandas as pd
 from sklearn.neighbors import KNeighborsClassifier
@@ -17,6 +16,8 @@ pred = knn.predict(X_new)
 print("Prediction: {}".format(pred))
 print("Predicted target Names: {}".format(data['target_names'][pred]))
 
+
+#Model evaluation
 y_pred = knn.predict(X_test)
 print("Test set predictions:\n {}".format(y_pred))
 print("Test set score: {:.2f}".format(np.mean(y_pred == y_test)))
